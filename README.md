@@ -1,8 +1,8 @@
-# file names extra zero remover written by UV-EAGLE
-# a simple bash script to remove extra zeros in your file names. For example converting "filename0001" to "filename1". Run this script in the directory were the files reside and it will automatically detect file names that have exta zeros and remove the extra zeros in their names. 
+#file names extra zero remover written by UV-EAGLE
+#a simple bash script to remove extra zeros in your file names. For example converting "filename0001" to "filename1". Run this script in the directory were the files reside and it will automatically detect file names that have exta zeros and remove the extra zeros in their names. 
 
 #!/bin/bash
-# Loop through all files in the current directory
+#Loop through all files in the current directory
 for file in *; do
     if [[ -f "$file" ]]; then  # Check if the item is a regular file
         # Extract the basename and extension of the file
